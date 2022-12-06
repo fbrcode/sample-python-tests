@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "sample-python-tests"
+version = "0.1.0"
+description = "Sample Python project built with Poetry for automated tests"
+authors = ["Fabio Bressler <fabio.bressler@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = ""
+repository = "https://github.com/xyz/python-poetry-sample/"
+documentation = "https://xyz.com/python-poetry/"
+keywords = [
+    "Poetry",
+    "Virtual Environments",
+    "Tutorial",
+    "Packages",
+    "Packaging"
+]
+#packages = [{include = "sample_python_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
