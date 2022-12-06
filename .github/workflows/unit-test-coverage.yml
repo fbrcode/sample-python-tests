@@ -49,10 +49,6 @@ jobs:
         shell: bash
         run: poetry install
 
-      - name: Run precommit
-        run: |
-          poetry run pre-commit run --all-files
-
       - name: Pytest coverage
         shell: bash
         run: poetry run pytest tests --cov src --cov-report term-missing --cov-branch -v --cov-fail-under=80
