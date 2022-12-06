@@ -7,9 +7,41 @@ In order to generate a good a verifiable python code, this base code will provid
 - `pyenv` - Define python versions to work on and manage them
 - `poetry` - Python package manager (<https://python-poetry.org/>)
 
+## Install and run
+
+Install dependencies:
+
+```shell
+poetry install
+```
+
+Execute main application:
+
+```shell
+poetry run start
+```
+
+Execute tests on activated virtual environment:
+
+```shell
+pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
+```
+
+Execute tests using poetry:
+
+```shell
+poetry run pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
+```
+
+Run tests with minimal 80% coverage threshold:
+
+```shell
+poetry run pytest tests --cov src --cov-report term-missing --cov-branch -v --cov-fail-under=80
+```
+
 ## Setup
 
-### Poetry
+### Poetry project setup
 
 Initialize poetry project:
 
@@ -27,40 +59,6 @@ Show package dependencies:
 
 ```shell
 poetry show --tree
-```
-
-Install dependencies:
-
-```shell
-poetry install
-```
-
-## Python test and coverage
-
-Execute tests on virtual environment:
-
-```shell
-pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
-```
-
-Execute tests using poetry:
-
-```shell
-poetry run pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
-```
-
-Set minimal coverage to 80%:
-
-```shell
-poetry run pytest tests --cov src --cov-report term-missing --cov-branch -v --cov-fail-under=80
-```
-
-## Poetry run
-
-Execute main application:
-
-```shell
-poetry run start
 ```
 
 ## References
