@@ -49,6 +49,12 @@ Execute tests using poetry:
 poetry run pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
 ```
 
+Set minimal coverage to 80%:
+
+```shell
+poetry run pytest tests --cov src --cov-report term-missing --cov-branch -v --cov-fail-under=80
+```
+
 ## Poetry run
 
 Execute main application:
