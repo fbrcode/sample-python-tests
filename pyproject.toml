@@ -15,7 +15,9 @@ keywords = [
     "Packages",
     "Packaging"
 ]
-#packages = [{include = "sample_python_tests"}]
+packages = [
+  { include = "src", from="." }
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -30,3 +32,6 @@ autopep8 = "^2.0.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "src.main:main"
