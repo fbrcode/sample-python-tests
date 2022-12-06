@@ -1,4 +1,4 @@
-from sample_python_tests.foo import is_a_bigger
+from src.foo import is_a_bigger
 
 
 def test_is_a_bigger():
