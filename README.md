@@ -29,6 +29,12 @@ Show package dependencies:
 poetry show --tree
 ```
 
+Install dependencies:
+
+```shell
+poetry install
+```
+
 ## Python test and coverage
 
 Execute tests on virtual environment:
@@ -41,6 +47,14 @@ Execute tests using poetry:
 
 ```shell
 poetry run pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
+```
+
+## Poetry run
+
+Execute main application:
+
+```shell
+poetry run start
 ```
 
 ## References
