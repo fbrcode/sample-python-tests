@@ -5,7 +5,6 @@ In order to generate a good a verifiable python code, this base code will provid
 ## Dependencies
 
 - `pyenv` - Define python versions to work on and manage them
-- `pyenv-virtualenv` - Create virtual environments for python versions
 - `poetry` - Python package manager (<https://python-poetry.org/>)
 
 ## Setup
@@ -28,6 +27,20 @@ Show package dependencies:
 
 ```shell
 poetry show --tree
+```
+
+## Python test and coverage
+
+Execute tests on virtual environment:
+
+```shell
+pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
+```
+
+Execute tests using poetry:
+
+```shell
+poetry run pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
 ```
 
 ## References
