@@ -16,7 +16,7 @@ keywords = [
     "Packaging"
 ]
 packages = [
-  { include = "src", from="." }
+  { include = "app", from="." }
 ]
 
 [tool.poetry.dependencies]
@@ -34,4 +34,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-start = "src.main:main"
+start = "app.main:main"
