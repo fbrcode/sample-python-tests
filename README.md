@@ -12,6 +12,7 @@ In order to generate a good a verifiable python code, this base code will provid
 Install dependencies:
 
 ```shell
+poetry config virtualenvs.in-project true
 poetry install
 ```
 
@@ -24,19 +25,19 @@ poetry run start
 Execute tests on activated virtual environment:
 
 ```shell
-pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
+pytest tests --cov=app --cov-report term-missing --cov-report html --cov-branch -v
 ```
 
 Execute tests using poetry:
 
 ```shell
-poetry run pytest tests --cov sample_python_tests --cov-report term-missing --cov-report html --cov-branch -v
+poetry run pytest tests --cov=app --cov-report term-missing --cov-report html --cov-branch -v
 ```
 
 Run tests with minimal 80% coverage threshold:
 
 ```shell
-poetry run pytest tests --cov src --cov-report term-missing --cov-branch -v --cov-fail-under=80
+poetry run pytest tests --cov=app --cov-report term-missing --cov-branch -v --cov-fail-under=80
 ```
 
 ## Setup

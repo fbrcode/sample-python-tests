@@ -1,4 +1,4 @@
-from src.foo import is_a_bigger
+from app.foo import is_a_bigger
 
 
 def test_is_a_bigger():

@@ -1,4 +1,4 @@
-from src.main import main
+from app.main import main
 
 
 def test_main(capfd):
