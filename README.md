@@ -8,6 +8,7 @@ In order to generate a good a verifiable python code, this base code will provid
 
 - `pyenv` - Define python versions to work on and manage them
 - `poetry` - Python package manager (<https://python-poetry.org/>)
+- `pre-commit` - Manage and maintain multi-language pre-commit hooks (<https://pre-commit.com/>)
 
 ## Install and run
 
@@ -62,6 +63,26 @@ Show package dependencies:
 
 ```shell
 poetry show --tree
+```
+
+### Pre-commit setup
+
+Install pre-commit on git hooks:
+
+```shell
+pre-commit install
+```
+
+Generate pre-commit sample configuration file:
+
+```shell
+pre-commit sample-config > .pre-commit-config.yaml
+```
+
+Run pre-commit on all files:
+
+```shell
+pre-commit run --all-files
 ```
 
 ## References
