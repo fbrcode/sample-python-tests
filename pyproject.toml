@@ -18,9 +18,10 @@ python-dotenv = "^0.21.0"
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
 pytest-cov = "*"
-autopep8 = "^2.0.0"
 pre-commit = "^2.20.0"
 isort = "^5.10.1"
+pylint = "^2.15.8"
+black = {version = "^22.10.0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core"]
