@@ -1,6 +1,8 @@
 import os
-from app.foo import is_a_bigger
+
 from dotenv import load_dotenv
+
+from app.foo import is_a_bigger
 
 
 def main():
