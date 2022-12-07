@@ -6,5 +6,5 @@ from dotenv import load_dotenv
 def main():
     load_dotenv()
     log_level = os.getenv("LOG_LEVEL")
-    print('Log level is {0}'.format(log_level))
+    print("Log level is {0}".format(log_level))
     print(is_a_bigger(2, 1))
