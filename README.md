@@ -1,8 +1,6 @@
 # Python Base Code Sample
 
-[![Python application]
-(<https://github.com/fbrcode/sample-python-tests/actions/workflows/python-app.yml/badge.svg>)]
-(<https://github.com/fbrcode/sample-python-tests/actions/workflows/python-app.yml>)
+[![Python application](https://github.com/fbrcode/sample-python-tests/actions/workflows/python-app.yml/badge.svg)](https://github.com/fbrcode/sample-python-tests/actions/workflows/python-app.yml)
 
 In order to generate a good a verifiable python code, this base code will provide a good starting point with dependency management, unit testing and code coverage.
 
