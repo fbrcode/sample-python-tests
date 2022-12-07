@@ -20,6 +20,7 @@ pytest = "*"
 pytest-cov = "*"
 autopep8 = "^2.0.0"
 pre-commit = "^2.20.0"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]

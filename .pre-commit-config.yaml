@@ -18,3 +18,10 @@ repos:
         additional_dependencies:
           - "pydantic"
           - "types-requests"
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: poetry run isort .
+        language: system
+        types: [python]
