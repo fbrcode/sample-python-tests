@@ -8,26 +8,20 @@ readme = "README.md"
 homepage = ""
 repository = "https://github.com/xyz/python-poetry-sample/"
 documentation = "https://xyz.com/python-poetry/"
-keywords = [
-    "Poetry",
-    "Virtual Environments",
-    "Tutorial",
-    "Packages",
-    "Packaging"
-]
-packages = [
-  { include = "app", from="." }
-]
+keywords = [ "Poetry", "Template", "Test" ]
+packages = [ { include = "app", from="." } ]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-
-[tool.poetry.dev-dependencies]
-pytest = "*"
-pytest-cov = "*"
+python-dotenv = "^0.21.0"
 
 [tool.poetry.group.dev.dependencies]
-autopep8 = "^2.0.0"
+pytest = "*"
+pytest-cov = "*"
+pre-commit = "^2.20.0"
+isort = "^5.10.1"
+pylint = "^2.15.8"
+black = {version = "^22.10.0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core"]
